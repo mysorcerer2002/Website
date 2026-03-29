@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NO BRAND - Luxury Shoe Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Eb+Garamond:wght@400;500;600;700&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+                primary: "#c9a96e",
+                background: "#0a0a0a",
+                surface: "#1a1a1a",
+                textMain: "#ffffff",
+                textMuted: "#999999",
+                cream: "#f5f0e8"
+            },
+            fontFamily: {
+              "headline": ["Eb Garamond", "serif"],
+              "body": ["Montserrat", "sans-serif"],
+              "label": ["Montserrat", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .serif-text {
+            font-family: 'Eb Garamond', serif;
+        }
+        .letter-spacing-luxury {
+            letter-spacing: 0.25em;
+        }
+        .letter-spacing-extreme {
+            letter-spacing: 0.4em;
+        }
+    </style>
+</head>
+<body class="bg-background text-textMain selection:bg-primary selection:text-background">
+<!-- TopNavBar (Shared Component Logic) -->
+<nav class="fixed top-0 w-full z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-[#c9a96e]/10 flex justify-between items-center px-12 py-6 w-full">
+<!-- Left Menu -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-sans text-xs tracking-widest uppercase text-white/70 hover:text-primary transition-all duration-300" href="category.html">NAM</a>
+<a class="font-sans text-xs tracking-widest uppercase text-white/70 hover:text-primary transition-all duration-300" href="category.html">NỮ</a>
+<a class="font-sans text-xs tracking-widest uppercase text-white/70 hover:text-primary transition-all duration-300" href="category.html">BỘ SƯU TẬP</a>
+</div>
+<!-- Center Logo -->
+<div class="absolute left-1/2 -translate-x-1/2">
+<h1 class="text-2xl font-serif font-light tracking-[0.3em] text-[#c9a96e]">NO BRAND</h1>
+</div>
+<!-- Right Menu/Actions -->
+<div class="flex gap-6 items-center">
+<button class="text-white/70 hover:text-primary transition-all duration-300 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="hidden lg:inline font-sans text-xs tracking-widest uppercase">TÌM KIẾM</span>
+</button>
+<button class="text-white/70 hover:text-primary transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+<a href="cart.html" class="text-white/70 hover:text-primary transition-all duration-300 relative">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-background text-[10px] font-bold px-1 rounded-full">0</span>
+</a>
+</div>
+</nav>
+<main>
+<!-- Hero Banner -->
+<section class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/40 to-background z-10"></div>
+<img alt="Hero Shoe Image" class="absolute inset-0 w-full h-full object-cover scale-105" data-alt="Close-up of luxury handcrafted Italian leather dress shoes on a dark reflective surface with dramatic warm side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi91dEnI-MNZK5L4JGP4Td24L_lDygsePx3d6EPymu9Porj9h-RP6N72cb4ip8h91QiSTBEQ6i6fV0a8xl7tUcEIQAa_mNX8qcYzm8yf4K1pC85ytmxmJ3upLtyF0HgHUY_C7NII0cE03dG6Ml6gpJB4NaHuTytuLBvvkVmYEqqbwZI126YZEBads3aLwunXZX9TIFvUtVrp9hX90jl7qODZ5VW9u22Oh20mZFfBqzlArn2Scq8bQYbsR1AVfEsU59K4wse0qRsLrq"/>
+<div class="relative z-20 text-center px-6 max-w-4xl">
+<p class="text-primary font-body text-sm tracking-[0.4em] uppercase mb-6 opacity-90">BỘ SƯU TẬP MỚI 2026</p>
+<h2 class="font-headline text-5xl md:text-7xl lg:text-8xl font-light mb-10 leading-tight tracking-tight">ĐẲNG CẤP<br/><span class="italic">VƯỢT THỜI GIAN</span></h2>
+<div class="flex justify-center">
+<a class="inline-block px-12 py-4 border border-primary text-primary font-body text-xs tracking-[0.3em] uppercase hover:bg-primary hover:text-background transition-all duration-500 group" href="category.html">
+                        KHÁM PHÁ NGAY
+                    </a>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 opacity-40">
+<span class="w-[1px] h-12 bg-primary"></span>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-32 px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<p class="text-primary font-body text-xs tracking-extreme uppercase mb-3">NỔI BẬT</p>
+<h3 class="font-headline text-4xl md:text-5xl font-light">SẢN PHẨM TIÊU BIỂU</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface overflow-hidden relative mb-6">
+<img alt="OXFORD CLASSIC" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-110 transition-transform duration-700" data-alt="Classic black leather Oxford shoes isolated on dark background, professional studio lighting highlighting fine stitching" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUaVfYOLTyXM_y0h9WtLXCMP1dOdsb6S3ppogr-LwdxV1pCg1v14NH1vWdjBLZjh9Lqx4iwlYhQVWPTkHYlZxtke9O3dITnJRKBXaKR3lHfHEaDWp-t4zHy_DxiPF2ow_YlJQgnUlM-aY47tmguu43AHPHl1TBPHKlCGOj9KlLBQCM38D1JY4M2uyEPgc2vpGRqPmIKen_7pvNRDRXbgV2JVOcOaF5Pdaaz905ddUFF6lXkghsQDnZH8kB3e35UUG9VVMnLwMxUvKR"/>
+<div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="text-center">
+<a href="product-detail.html"><h4 class="font-headline text-xl mb-2 group-hover:text-primary transition-colors">OXFORD CLASSIC</h4></a>
+<p class="text-primary font-body text-sm tracking-widest font-light">12.500.000₫</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface overflow-hidden relative mb-6">
+<img alt="STILETTO NOIR" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-110 transition-transform duration-700" data-alt="Sleek black stiletto high heels with premium glossy finish, sharp silhouette against a dark moody atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNmAiVUiTkMmZF8P9X27BI1tndW7yB2tahgmalys2q8GKBUFr_GHUsEgpBEXRsiNlhT8MFzTyLYHD9MawTHNOVaqlGk4Pb1r6lgpR-udbOuVyXLAnBi3zvmMfkYISfRNIYtIpjPRR09vsTr7kc9NSurIiFw_KYtLs8HUQEObZWgyWKDQzmVjH3LbV5CNwiJ4LpFnM_4GWHoNy5DHvo-vWrbdmciStLdflA_TmqaMpl47-TdAHAoc_cgHbFsoAe7QJJgpGt5FFMcLvO"/>
+<div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="text-center">
+<a href="product-detail.html"><h4 class="font-headline text-xl mb-2 group-hover:text-primary transition-colors">STILETTO NOIR</h4></a>
+<p class="text-primary font-body text-sm tracking-widest font-light">15.800.000₫</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface overflow-hidden relative mb-6">
+<img alt="DERBY PREMIUM" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-110 transition-transform duration-700" data-alt="Hand-burnished brown leather Derby shoes showing exquisite leather grain and craftsmanship on dark walnut wood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtBKy1sTuY-BLN77uPk3ufrABdMYrW-PwDzTVernHLuCKW3D9AeW_OhnLJht-kY-JE8uSmlGAogJ046pfZr85P_sXOWVH6iHfkr2NbuhgyNOvZnHWucY6jTpsjfXZcMEbEYrSE5ihM1G7I0Oi8t9IdmOobxMnv4qwDgTvr7BiX2MoZBjka3mEFHx1kw1mllaK2X-HXNrGlwnaYIHxBhSaccaV3vW8zcWb06fbacQOjU-utHWQvOjkg81Pt0Tnmn30aQ5Lu7HJjAV90"/>
+<div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="text-center">
+<a href="product-detail.html"><h4 class="font-headline text-xl mb-2 group-hover:text-primary transition-colors">DERBY PREMIUM</h4></a>
+<p class="text-primary font-body text-sm tracking-widest font-light">14.200.000₫</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface overflow-hidden relative mb-6">
+<img alt="PUMP ELEGANCE" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-110 transition-transform duration-700" data-alt="Elegant beige suede pump shoes for women, minimal aesthetic, soft shadows on a dark minimalist surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGqddqRNpXMw2GohrTHE6ldjdt_nNkgYQLQ2GJpDQGhBSH5UudldLffGo8p7cuFxsqkBglRmvgFyDz6rnLcHrvcZVyYoWTcrv1by7AAQAKcC4cnr-KHqcoczprdfmM9A8L4N0o3u01y8Yn6UiEUJ0E4SO2FyEFcuBpJuSe52HvFS6ObwaClB0AHN4X5HA5Lp2Yk5ZgWzev-dLJrPEM6AjKgaq4W1to8j3WXN5jTt3uN7xvRxfVk7VAJonH7iRIAJSokwo0cmKRLY2U"/>
+<div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="text-center">
+<a href="product-detail.html"><h4 class="font-headline text-xl mb-2 group-hover:text-primary transition-colors">PUMP ELEGANCE</h4></a>
+<p class="text-primary font-body text-sm tracking-widest font-light">13.900.000₫</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Story Section -->
+<section class="bg-surface py-24 md:py-0 overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 min-h-[600px] items-center">
+<!-- Left Image -->
+<div class="relative h-full min-h-[400px]">
+<img alt="Craftsmanship Image" class="absolute inset-0 w-full h-full object-cover grayscale-[0.3]" data-alt="Close up of an artisan's hands meticulously stitching a leather shoe sole with traditional tools in a dimly lit studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPGA-17RZR6_p3dPOIcSMowP3-WSkG06WHm1Eh7pfw_wNMOsHQwFwk953xE6Pb8JpAkZQTu7Azq6ogal69N-20fdmOFXLe5p6DdLFvOFRoiG1W_J3qqBY8DjpibiweG9tmfw_bKkQ_EOniJQPXdOEUWJDwuEm46_KDGErr8BGtYZBq8eT_ZDCF1B48j8TDtei-keYnjEUCkYxoc7xIIl8GUBToiW7W6KDz7magkU95mENWctACd2q7zdYuaL0D3Xex-zpJCMXJRtDt"/>
+<div class="absolute inset-0 bg-background/30"></div>
+</div>
+<!-- Right Content -->
+<div class="px-8 md:px-20 py-20">
+<p class="text-primary font-body text-xs tracking-extreme uppercase mb-4">CÂU CHUYỆN</p>
+<h3 class="font-headline text-4xl md:text-6xl font-light mb-8">NGHỆ THUẬT<br/>THỦ CÔNG</h3>
+<p class="text-textMuted font-body leading-loose text-sm md:text-base max-w-lg mb-10">
+                        Tại NO BRAND, mỗi đôi giày không chỉ là phụ kiện, mà là một tác phẩm nghệ thuật được nhào nặn từ đôi bàn tay của những nghệ nhân bậc thầy. Chúng tôi tôn thờ sự tỉ mỉ trong từng đường kim mũi chỉ, lựa chọn những dòng da thượng hạng nhất từ các xưởng thuộc da truyền thống tại Ý. Triết lý của chúng tôi là sự kết hợp giữa kỹ nghệ di sản và thẩm mỹ đương đại.
+                    </p>
+<a class="text-white font-body text-xs tracking-widest uppercase border-b border-primary pb-2 hover:text-primary transition-colors" href="about.html">KHÁM PHÁ QUY TRÌNH</a>
+</div>
+</div>
+</section>
+<!-- Newsletter / Minimal Banner -->
+<section class="py-32 px-6 text-center border-t border-primary/10">
+<h4 class="font-headline text-3xl font-light mb-6">ĐĂNG KÝ NHẬN TIN ĐỘC QUYỀN</h4>
+<p class="text-textMuted font-body text-xs tracking-widest uppercase mb-10 opacity-70">Cập nhật những bộ sưu tập giới hạn sớm nhất</p>
+<form class="max-w-md mx-auto flex gap-4">
+<input class="bg-transparent border-b border-white/20 focus:border-primary text-white w-full py-3 outline-none font-body text-sm transition-colors" placeholder="Email của bạn" type="email"/>
+<button class="text-primary font-body text-xs tracking-widest uppercase hover:text-white transition-colors" type="submit">GỬI</button>
+</form>
+</section>
+</main>
+<!-- Footer (Shared Component Logic) -->
+<footer class="bg-[#0a0a0a] w-full border-t border-[#1a1a1a]">
+<div class="max-w-7xl mx-auto px-12 py-16 flex flex-col md:flex-row justify-between items-center gap-8">
+<!-- Brand Logo Footer -->
+<div class="text-[#c9a96e] font-serif tracking-[0.2em] text-xl">NO BRAND</div>
+<!-- Links -->
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-sans text-xs tracking-widest uppercase text-[#999999] hover:text-[#c9a96e] transition-colors" href="about.html">GIỚI THIỆU</a>
+<a class="font-sans text-xs tracking-widest uppercase text-[#999999] hover:text-[#c9a96e] transition-colors" href="contact.html">LIÊN HỆ</a>
+<a class="font-sans text-xs tracking-widest uppercase text-[#999999] hover:text-[#c9a96e] transition-colors" href="#">CHÍNH SÁCH</a>
+<a class="font-sans text-xs tracking-widest uppercase text-[#999999] hover:text-[#c9a96e] transition-colors" href="#">HỆ THỐNG CỬA HÀNG</a>
+</div>
+<!-- Copyright -->
+<div class="font-sans text-xs tracking-widest uppercase text-[#999999] opacity-80">
+                © 2026 NO BRAND LUXURY. ALL RIGHTS RESERVED.
+            </div>
+</div>
+<!-- Social Icons (Minimal) -->
+<div class="flex justify-center gap-6 pb-12 opacity-40 grayscale hover:opacity-100 transition-all">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="chat">chat</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="location_on">location_on</span></a>
+</div>
+</footer>
+</body></html>

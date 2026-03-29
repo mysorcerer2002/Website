@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GIÀY NAM | NO BRAND Luxury</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#c9a96e",
+                        background: "#0a0a0a",
+                        surface: "#1a1a1a",
+                        onSurface: "#999999",
+                        cream: "#f5f0e8"
+                    },
+                    fontFamily: {
+                        "headline": ["EB Garamond", "serif"],
+                        "body": ["Montserrat", "sans-serif"],
+                        "label": ["Montserrat", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+        .letter-spacing-widest {
+            letter-spacing: 0.3em;
+        }
+        .letter-spacing-luxury {
+            letter-spacing: 0.5em;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary selection:text-background">
+<!-- TopNavBar -->
+<nav class="flex justify-between items-center px-8 h-20 w-full sticky top-0 z-50 bg-[#0a0a0a] border-b border-[#1a1a1a]">
+<!-- Left Navigation -->
+<div class="flex items-center space-x-8">
+<a class="font-['EB_Garamond'] tracking-[0.2em] uppercase text-sm text-[#c9a96e] border-b border-[#c9a96e] pb-1" href="category.html">NAM</a>
+<a class="font-['EB_Garamond'] tracking-[0.2em] uppercase text-sm text-[#999999] hover:text-[#ffffff] transition-colors duration-300" href="category.html">NỮ</a>
+<a class="font-['EB_Garamond'] tracking-[0.2em] uppercase text-sm text-[#999999] hover:text-[#ffffff] transition-colors duration-300" href="category.html">BỘ SƯU TẬP</a>
+</div>
+<!-- Center Brand -->
+<div class="absolute left-1/2 -translate-x-1/2">
+<a href="index.html" class="text-2xl font-light tracking-[0.5em] text-[#ffffff]">NO BRAND</a>
+</div>
+<!-- Right Actions -->
+<div class="flex items-center space-x-6 text-[#999999]">
+<button class="hover:text-[#c9a96e] transition-all duration-300 flex items-center">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="hover:text-[#c9a96e] transition-all duration-300 flex items-center">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+<a href="cart.html" class="hover:text-[#c9a96e] transition-all duration-300 flex items-center relative">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-2 -right-2 text-[8px] bg-primary text-background rounded-full w-4 h-4 flex items-center justify-center font-bold">0</span>
+</a>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Page Header -->
+<header class="pt-20 pb-12 text-center bg-[#0a0a0a]">
+<h1 class="font-headline text-5xl md:text-6xl tracking-widest text-white mb-12">GIÀY NAM</h1>
+<!-- Filter Tabs -->
+<div class="flex justify-center items-center space-x-10 border-b border-[#1a1a1a] max-w-4xl mx-auto pb-4">
+<button class="font-label text-xs tracking-widest text-primary border-b border-primary pb-4 transition-all uppercase">TẤT CẢ</button>
+<button class="font-label text-xs tracking-widest text-onSurface hover:text-white pb-4 transition-all uppercase">OXFORD</button>
+<button class="font-label text-xs tracking-widest text-onSurface hover:text-white pb-4 transition-all uppercase">DERBY</button>
+<button class="font-label text-xs tracking-widest text-onSurface hover:text-white pb-4 transition-all uppercase">LOAFER</button>
+<button class="font-label text-xs tracking-widest text-onSurface hover:text-white pb-4 transition-all uppercase">BOOT</button>
+</div>
+</header>
+<!-- Toolbar -->
+<section class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center border-b border-[#1a1a1a]/50">
+<span class="font-label text-[10px] tracking-widest text-onSurface uppercase">12 SẢN PHẨM</span>
+<div class="flex items-center space-x-2 group cursor-pointer">
+<span class="font-label text-[10px] tracking-widest text-white uppercase">SẮP XẾP: MỚI NHẤT</span>
+<span class="material-symbols-outlined text-onSurface group-hover:text-primary transition-colors" style="font-size: 14px;">expand_more</span>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="max-w-7xl mx-auto px-8 py-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Product Card 1 -->
+<a href="product-detail.html" class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a premium black leather Oxford shoe with sleek silhouette on a dark moody background with dramatic spotlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIGbD9YXCTbMZRajEdSNxd2HNdHLdBxVcT9TWQCybchPryy1Uw49EzdQfIs0A1lw97PNWcwZbpJPmoQzW-do91lkR3aOsaVaX-i5ywgUzYjbk74bZLlQG2bTLx0gVceamBdudTO8kNeltwWp-hx0Letp6O_5aR9AI7kHxQSWmSvEsfQUj7XkzCvybHaiWF4xrOHyibe71yVYrSxnbQm-SLfIHikZMspaBZ-0egid5SsZU_EzOGBMsedqQVY0_x5XH35hfiGBGFcunH"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+</div>
+<div class="text-center">
+<h3 class="font-headline text-xl tracking-wider text-white mb-2 uppercase">OXFORD CLASSIC</h3>
+<p class="font-body text-sm tracking-widest text-primary">12.500.000₫</p>
+</div>
+</a>
+<!-- Product Card 2 -->
+<a href="product-detail.html" class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant brown leather Derby shoe with visible stitching detail on a deep charcoal surface with soft ambient luxury lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYhoMapW1SIT5Yps18MO7cFQebRWEzcGEWeVxT50YAqUW1N191oM2Qw-D7M767aYHsyAScCdusllhsIX5Iw8jq9X_LNNs9dHLeJemNG43uxFtv-g1Rc-3UIc0sSHk4qYfLya03ilh-o0vqRlrqMxwKH2XHgJ-OxQp8Nv26_YDpKOjBOm9QNRNcmYdss_tUejrUfYZqaLMDUXY4s2FpNjCLUhcApkgL98sJTGy_CGRBPJGyOf400FrkAJ7J9bo0MQSQ16V79YVFwHBP"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+</div>
+<div class="text-center">
+<h3 class="font-headline text-xl tracking-wider text-white mb-2 uppercase">DERBY PREMIUM</h3>
+<p class="font-body text-sm tracking-widest text-primary">11.200.000₫</p>
+</div>
+</a>
+<!-- Product Card 3 -->
+<a href="product-detail.html" class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxury suede Loafer in deep navy blue featuring a minimalist tassel on a dark textured marble floor with sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGNIfwPAlVB1pWEj5R8fcXis0yPZ6RXdxSAhIxziwMVQRPWOCaKRWjWsKL-DAfwb3E7BzU3FqNgGShuWdP_tsfCJ0rJH6HJuSUITQSi4oxabicrv2R72IZa2er-ZSvzAPaavjSmZgE2O99GI8s_uRB2VkgY7MCIysd30rCA5nn9c7NlBAr7uqKtj0WsV6VUIC1Dotos0Rahu5BHbA4drmeeRbhFKjWGq1RMl-MW3VoRdQGAoqYA5MOC0jiaaZE5rL6arFV2qk7BfZA"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+</div>
+<div class="text-center">
+<h3 class="font-headline text-xl tracking-wider text-white mb-2 uppercase">LOAFER SUEDE</h3>
+<p class="font-body text-sm tracking-widest text-primary">9.800.000₫</p>
+</div>
+</a>
+<!-- Product Card 4 -->
+<a href="product-detail.html" class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Polished dark mahogany Chelsea boot with elastic side panels standing on a reflective black surface with atmospheric haze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLY08YjRebRxJqUGscRM1l4QqzGqe_ja30OSB7-R1w7_Oq41diyhl0uhLObQt7OaQbsjjyDdjWh4uKbw4o0XbxnEYKCKP9BNubHalQXd7ZD6qsMjQcApp527j-w9EHAfHRcxDOh_qEWAsBA-jxZlMw7OJxtn6AuAS2FCfnARQvWFeEh9i4D-dUhhI-G4ZR0bWE0sFDgZS38fzduGu1sng8fd6SpPKbcOtnIsM9DC0mIDOEW-4-9UYP2eUnWEPt-laOIU6BCUIopjzV"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+</div>
+<div class="text-center">
+<h3 class="font-headline text-xl tracking-wider text-white mb-2 uppercase">CHELSEA BOOT</h3>
+<p class="font-body text-sm tracking-widest text-primary">14.300.000₫</p>
+</div>
+</a>
+<!-- Product Card 5 -->
+<a href="product-detail.html" class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Double monk strap shoe in chestnut leather with polished silver buckles on a dark minimalist pedestal with side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuaQPHOWdUONNv684QDZVBDX2VJPP5Llgoc4vDu7rJa7L-LO_X45nJJaO__rt3ZGKtDyGwnvYSigAZSG8EM-UC7Ivqb_da6JUf2QMgjyDgJtBcmN940UsqW5mRqhsdGPUrp-80pL8rEF2iDrc0zh6SICOIYO3MS4HB8bl_9k9CVM4tIhVyN27m401Rhn5w-3nWoTDY2rYOnCuubPx4wtcGbKuSYioCBMts29CtzsiaLIfvNJJNsG4MvDItW8ZS0qXgfXTU9zIh599r"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+</div>
+<div class="text-center">
+<h3 class="font-headline text-xl tracking-wider text-white mb-2 uppercase">MONK STRAP</h3>
+<p class="font-body text-sm tracking-widest text-primary">10.500.000₫</p>
+</div>
+</a>
+<!-- Product Card 6 -->
+<a href="product-detail.html" class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Classic wingtip brogue shoe with intricate perforated patterns on dark grain leather against a black backdrop with soft glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW9Qm5YYBpdOi0aumdQ3cv2IChN5X0nEVj5VlbYjZyxLtFZ8tsxdjYtfW2Z1eNdHHY7ARLiCT4bDskyS_ya1b26kbdNQJDoGcsFDAbEq7dp1nyQBM-IY0YG7HT683RgAUSWFWe5tEscdH_VnAleKvX0a8fkRt4gKoAMVAu5HyLXW1yaMlOqVJ27ELpaEKnwrNcE-KO8E16zVQVBocrXQ2lZhIM823NBx_GTJ120s3flgBnRqfWz8ls_DLX2cwfCyFc1KSBi6a0LLxP"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+</div>
+<div class="text-center">
+<h3 class="font-headline text-xl tracking-wider text-white mb-2 uppercase">BROGUE WING</h3>
+<p class="font-body text-sm tracking-widest text-primary">13.200.000₫</p>
+</div>
+</a>
+</div>
+</section>
+<!-- Pagination -->
+<section class="max-w-7xl mx-auto px-8 pb-24 text-center">
+<div class="flex justify-center items-center space-x-6">
+<span class="text-white border-b border-white pb-1 font-label text-xs tracking-widest">01</span>
+<a class="text-onSurface hover:text-white transition-colors font-label text-xs tracking-widest" href="#">02</a>
+<a class="text-onSurface hover:text-white transition-colors font-label text-xs tracking-widest" href="#">THIẾP THEO</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col items-center py-12 px-4 space-y-8 w-full bg-[#0a0a0a] border-t border-[#1a1a1a]">
+<div class="text-lg font-bold text-[#ffffff] tracking-[0.3em]">NO BRAND</div>
+<div class="flex flex-wrap justify-center gap-x-12 gap-y-4">
+<a class="font-['Montserrat'] tracking-widest text-[10px] uppercase text-[#999999] hover:text-[#c9a96e] transition-colors duration-300" href="#">CHÍNH SÁCH BẢO HÀNH</a>
+<a class="font-['Montserrat'] tracking-widest text-[10px] uppercase text-[#999999] hover:text-[#c9a96e] transition-colors duration-300" href="about.html">VỀ CHÚNG TÔI</a>
+<a class="font-['Montserrat'] tracking-widest text-[10px] uppercase text-[#999999] hover:text-[#c9a96e] transition-colors duration-300" href="contact.html">LIÊN HỆ</a>
+<a class="font-['Montserrat'] tracking-widest text-[10px] uppercase text-[#999999] hover:text-[#c9a96e] transition-colors duration-300" href="#">CỬA HÀNG</a>
+</div>
+<div class="pt-8 border-t border-[#1a1a1a] w-full max-w-4xl text-center">
+<p class="font-['Montserrat'] tracking-widest text-[10px] uppercase text-[#999999]">© 2024 NO BRAND. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+</body></html>
